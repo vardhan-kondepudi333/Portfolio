@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium AI and Robotics portfolio for internship applications.">
+  <meta name="author" content="Satya Sai Vardhan Kondepudi">
+  <meta name="theme-color" content="#020617">
+  <meta property="og:title" content="Satya Sai Vardhan Kondepudi | AI & Robotics Portfolio">
+  <meta property="og:description" content="Artificial Intelligence and Robotics portfolio featuring robotics, embedded systems, automation projects, and internship experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/profile.jpeg">
+  <title>Satya Sai Vardhan Kondepudi | AI & Robotics Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" role="status" aria-live="polite" aria-label="Loading portfolio">
+    <div class="loader__orb" aria-hidden="true"></div>
+    <div class="loader__content">
+      <span class="loader__kicker">AI Robotics</span>
+      <p>Initializing Portfolio</p>
+    </div>
+  </div>
+  <script>
+    window.setTimeout(() => {
+      const loader = document.getElementById("loader");
+      if (loader) { loader.classList.add("is-hidden"); window.setTimeout(() => loader.remove(), 800); }
+    }, 1800);
+  </script>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <canvas class="particle-canvas" id="particleCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand magnetic-link" href="#home" aria-label="Go to hero section">
+        <span class="brand__symbol">AI</span>
+        <span class="brand__text">Satya Sai Vardhan</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link active" href="#home" data-section="home">Home</a></li>
+        <li><a class="nav-link" href="#about" data-section="about">About</a></li>
+        <li><a class="nav-link" href="#education" data-section="education">Education</a></li>
+        <li><a class="nav-link" href="#skills" data-section="skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects" data-section="projects">Projects</a></li>
+        <li><a class="nav-link" href="#experience" data-section="experience">Experience</a></li>
+        <li><a class="nav-link" href="#resume" data-section="resume">Resume</a></li>
+        <li><a class="nav-link" href="#contact" data-section="contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle magnetic-link" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="true">
+        <span class="theme-toggle__track" aria-hidden="true">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero__mesh" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="floating-shapes" aria-hidden="true">
+        <span class="shape shape--one"></span>
+        <span class="shape shape--two"></span>
+        <span class="shape shape--three"></span>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__text reveal-group" data-aos="fade-up">
+          <h1 id="hero-title"><span class="text-reveal">Satya Sai<br>Vardhan</span></h1>
+          <h2>
+            <span class="typing-prefix">Focused on</span>
+            <span id="typingText" data-phrases="Artificial Intelligence & Robotics|Robotics Projects|Embedded Systems|Automation">Artificial Intelligence & Robotics</span>
+            <span class="typing-caret" aria-hidden="true"></span>
+          </h2>
+          <p class="hero__intro">
+            Artificial Intelligence and Robotics student focused on building intelligent systems, robotic mechanisms, embedded solutions, and automation projects for real-world engineering problems.
+          </p>
+
+          <div class="hero__actions" aria-label="Primary actions">
+            <a class="btn btn--primary magnetic-link" href="assets/java-programming-internship-certificate.pdf" download>
+              <span class="btn__shine" aria-hidden="true"></span>
+              <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+              Download Certificate
+            </a>
+            <a class="btn btn--secondary magnetic-link" href="assets/Satya_Sai_Vardhan_Resume.pdf" download>
+              <span class="btn__shine" aria-hidden="true"></span>
+              <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+              Download Resume
+            </a>
+            <a class="btn btn--secondary magnetic-link" href="https://www.linkedin.com/in/satya-sai-vardhan-kondepudi-31aa86366" target="_blank" rel="noopener noreferrer">
+              <span class="btn__shine" aria-hidden="true"></span>
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              LinkedIn
+            </a>
+          </div>
+
+          <div class="hero__metrics" aria-label="Portfolio highlights">
+            <div class="metric"><strong class="counter" data-count="5">0</strong><span>Featured Projects</span></div>
+            <div class="metric"><strong class="counter" data-count="4">0</strong><span>Skill Areas</span></div>
+            <div class="metric"><strong class="counter" data-count="1">0</strong><span>Internship</span></div>
+          </div>
+        </div>
+
+        <div class="hero__visual tilt-card" data-aos="zoom-in" data-aos-delay="150" data-tilt>
+          <div class="profile-orbit" aria-hidden="true"></div>
+          <div class="profile-frame">
+            <img src="images/profile.jpeg" alt="Professional portrait of Satya Sai Vardhan Kondepudi" width="520" height="640" loading="eager" decoding="async">
+          </div>
+          <div class="hero-stat hero-stat--top glass-chip"><i class="fa-solid fa-robot" aria-hidden="true"></i><span>Robotics Projects</span></div>
+          <div class="hero-stat hero-stat--bottom glass-chip"><i class="fa-solid fa-microchip" aria-hidden="true"></i><span>Embedded Systems</span></div>
+        </div>
+      </div>
+
+      <a class="scroll-indicator" href="#about" aria-label="Scroll to about section"><span></span></a>
+    </section>
+
+    <section class="about section section--panel" id="about" aria-labelledby="about-title">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow"><span></span> About Me</p>
+        <h2 id="about-title">Engineering intelligent machines with precision and purpose.</h2>
+      </div>
+
+      <div class="about-layout">
+        <article class="glass-card about-card tilt-card" data-aos="fade-up" data-aos-delay="100" data-tilt>
+          <div class="card-glow" aria-hidden="true"></div>
+          <p>I am an Artificial Intelligence and Robotics student with hands-on experience across robotics, embedded systems, programming, and automation-focused projects. My work includes gesture-controlled mobility, pick-and-place systems, robotic arms, industrial robot concepts, and manipulator mechanisms.</p>
+          <p>I am seeking internship opportunities where I can contribute to practical engineering teams, learn from production-grade systems, and apply my technical foundation to intelligent automation, robotics software, and embedded innovation.</p>
+        </article>
+
+        <aside class="highlight-grid" aria-label="Profile highlights" data-aos="fade-left" data-aos-delay="180">
+          <div class="highlight-card glass-card"><i class="fa-solid fa-brain" aria-hidden="true"></i><strong>Artificial Intelligence</strong><span>Core focus area</span></div>
+          <div class="highlight-card glass-card"><i class="fa-solid fa-robot" aria-hidden="true"></i><strong>Robotics</strong><span>Hands-on projects</span></div>
+          <div class="highlight-card glass-card"><i class="fa-solid fa-microchip" aria-hidden="true"></i><strong>Embedded Systems</strong><span>Hardware-aware builds</span></div>
+          <div class="highlight-card glass-card"><i class="fa-solid fa-gears" aria-hidden="true"></i><strong>Automation</strong><span>Engineering workflows</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="education section" id="education" aria-labelledby="education-title">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow"><span></span> Education</p>
+        <h2 id="education-title">Academic Foundation</h2>
+      </div>
+
+      <div class="timeline timeline--education" data-aos="fade-up" data-aos-delay="100">
+        <article class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-card glass-card tilt-card" data-tilt>
+            <span class="timeline-label">B.Tech</span>
+            <h3>Bachelor of Technology</h3>
+            <p>Artificial Intelligence & Robotics</p>
+            <div class="coursework">
+              <h4>Relevant Coursework</h4>
+              <ul>
+                <li>Artificial Intelligence</li>
+                <li>Robotics</li>
+                <li>Embedded Systems</li>
+                <li>Programming</li>
+                <li>Automation</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section section--panel" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow"><span></span> Technical Skills</p>
+        <h2 id="skills-title">Built for AI, robotics, and embedded engineering.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card glass-card tilt-card" data-aos="fade-up" data-tilt>
+          <div class="skill-card__icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+          <h3>Programming</h3>
+          <p>Core programming skills for robotics logic, automation workflows, and intelligent systems.</p>
+          <div class="skill-progress" data-progress="85" aria-label="Programming skill progress"><span></span></div>
+          <div class="tags"><span>Logic</span><span>Automation</span><span>Systems</span></div>
+        </article>
+
+        <article class="skill-card glass-card tilt-card" data-aos="fade-up" data-aos-delay="100" data-tilt>
+          <div class="skill-card__icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+          <h3>Robotics</h3>
+          <p>Robot mechanisms, manipulator concepts, motion systems, and project-based prototyping.</p>
+          <div class="skill-progress" data-progress="88" aria-label="Robotics skill progress"><span></span></div>
+          <div class="tags"><span>Mechanisms</span><span>Manipulators</span><span>Motion</span></div>
+        </article>
+
+        <article class="skill-card glass-card tilt-card" data-aos="fade-up" data-aos-delay="200" data-tilt>
+          <div class="skill-card__icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+          <h3>Embedded Systems</h3>
+          <p>Hardware-aware development for sensors, controllers, actuators, and robotic platforms.</p>
+          <div class="skill-progress" data-progress="82" aria-label="Embedded Systems skill progress"><span></span></div>
+          <div class="tags"><span>Sensors</span><span>Controllers</span><span>Actuators</span></div>
+        </article>
+
+        <article class="skill-card glass-card tilt-card" data-aos="fade-up" data-aos-delay="300" data-tilt>
+          <div class="skill-card__icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div>
+          <h3>Tools</h3>
+          <p>Engineering tools and workflows used for project development, testing, and documentation.</p>
+          <div class="skill-progress" data-progress="80" aria-label="Tools skill progress"><span></span></div>
+          <div class="tags"><span>Development</span><span>Testing</span><span>Documentation</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow"><span></span> Featured Projects</p>
+        <h2 id="projects-title">Selected Robotics Work</h2>
+      </div>
+
+      <div class="filter-bar" data-aos="fade-up" data-aos-delay="100" role="group" aria-label="Project filters">
+        <button class="filter-btn active magnetic-link" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn magnetic-link" type="button" data-filter="robotics" aria-pressed="false">Robotics</button>
+        <button class="filter-btn magnetic-link" type="button" data-filter="embedded" aria-pressed="false">Embedded</button>
+        <button class="filter-btn magnetic-link" type="button" data-filter="automation" aria-pressed="false">Automation</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card glass-card tilt-card" data-category="robotics embedded" data-aos="fade-up" data-tilt>
+          <figure class="project-image"><img src="images/gesture-robot.jpeg" alt="Gesture-controlled mobile robot chassis" width="720" height="480" loading="lazy" decoding="async"></figure>
+          <div class="project-content">
+            <div class="project-meta"><span>Robotics</span><span>Embedded</span></div>
+            <h3>Gesture-Controlled Mobile Robot</h3>
+            <p>Built a wireless mobile robot that translates hand movements into intuitive directional control.</p>
+            <p class="project-skills">Skills Used: Arduino, MPU6050, Bluetooth, L298N</p>
+            <div class="project-footer"><div class="tags"><span>Robotics</span><span>Embedded</span><span>Gesture Control</span></div><button class="project-action magnetic-link" type="button" aria-label="View Gesture-Controlled Mobile Robot image"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card tilt-card" data-category="robotics automation" data-aos="fade-up" data-aos-delay="100" data-tilt>
+          <figure class="project-image"><img src="images/pick-and-place.jpeg" alt="Bluetooth pick-and-place robot" width="720" height="480" loading="lazy" decoding="async"></figure>
+          <div class="project-content">
+            <div class="project-meta"><span>Robotics</span><span>Automation</span></div>
+            <h3>Pick and Place Robot</h3>
+            <p>Designed a Bluetooth-controlled robotic vehicle with an onboard arm for remote small-object handling.</p>
+            <p class="project-skills">Skills Used: Arduino Uno, Bluetooth, Servo Motors, Mechanism Design</p>
+            <div class="project-footer"><div class="tags"><span>Robotics</span><span>Automation</span><span>Manipulation</span></div><button class="project-action magnetic-link" type="button" aria-label="View Pick and Place Robot project details"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card tilt-card" data-category="robotics automation" data-aos="fade-up" data-aos-delay="200" data-tilt>
+          <figure class="project-image"><img src="images/5-dof-robot-arm.jpg" alt="5-DOF robotic arm prototype" width="720" height="480" loading="lazy" decoding="async"></figure>
+          <div class="project-content">
+            <div class="project-meta"><span>Robotics</span><span>Control</span></div>
+            <h3>5 DOF Robotic Arm</h3>
+            <p>Developed an articulated manipulator prototype to explore multi-axis motion and object manipulation.</p>
+            <p class="project-skills">Skills Used: Arduino, Servo Motors, Forward &amp; Inverse Kinematics</p>
+            <div class="project-footer"><div class="tags"><span>5 DOF</span><span>Robotic Arm</span><span>Control</span></div><button class="project-action magnetic-link" type="button" aria-label="View 5 DOF Robotic Arm project details"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card tilt-card" data-category="robotics embedded" data-aos="fade-up" data-tilt>
+          <figure class="project-image"><img src="images/gesture-glove.jpeg" alt="Wearable hand-gesture controller with motion sensor" width="720" height="480" loading="lazy" decoding="async"></figure>
+          <div class="project-content">
+            <div class="project-meta"><span>Wearables</span><span>Embedded</span></div>
+            <h3>Gesture-Controlled Robot Interface</h3>
+            <p>Created a wearable controller that captures hand motion to command a companion mobile robot.</p>
+            <p class="project-skills">Skills Used: Arduino Nano, MPU6050, HC-05 Bluetooth, Control Logic</p>
+            <div class="project-footer"><div class="tags"><span>Wearables</span><span>Sensors</span><span>Bluetooth</span></div><button class="project-action magnetic-link" type="button" aria-label="View Gesture-Controlled Robot Interface image"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card tilt-card" data-category="robotics automation" data-aos="fade-up" data-aos-delay="100" data-tilt>
+          <figure class="project-image"><img src="images/2r-manipulator.jpeg" alt="2R parallel manipulator prototype" width="720" height="480" loading="lazy" decoding="async"></figure>
+          <div class="project-content">
+            <div class="project-meta"><span>Manipulator</span><span>Mechanisms</span></div>
+            <h3>2R Parallel Manipulator</h3>
+            <p>Designed and built a 2R manipulator prototype for trajectory planning and linkage-motion experiments.</p>
+            <p class="project-skills">Skills Used: Arduino, Servo Motors, Inverse Kinematics, Mechanisms</p>
+            <div class="project-footer"><div class="tags"><span>Manipulator</span><span>Mechanisms</span><span>Robotics</span></div><button class="project-action magnetic-link" type="button" aria-label="View 2R Parallel Manipulator project details"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience section section--panel" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow"><span></span> Internship Experience</p>
+        <h2 id="experience-title">Professional Exposure</h2>
+      </div>
+
+      <div class="experience-layout">
+        <div class="experience-timeline" data-aos="fade-right">
+          <article class="timeline-card glass-card tilt-card" data-tilt>
+            <span class="timeline-label">1 Month</span>
+            <h3>Java Programming Internship</h3>
+            <p>Company: IncodeVision</p>
+            <p>Internship experience focused on Java programming fundamentals and practical software development exposure.</p>
+          </article>
+        </div>
+
+        <aside class="certificate-preview glass-card tilt-card" data-aos="fade-left" aria-labelledby="certificate-title" data-tilt>
+          <div class="certificate-preview__header"><h3 id="certificate-title">Certificate Preview</h3><span class="experience-badge">IncodeVision</span></div>
+          <a class="certificate-link" href="assets/java-programming-internship-certificate.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Java Programming Internship certificate">
+            <figure><img src="images/java-programming-internship-certificate.png" alt="Java Programming Internship certificate from IncodeVision" width="1440" height="1019" loading="lazy" decoding="async"></figure>
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="resume section" id="resume" aria-labelledby="resume-title">
+      <div class="resume-card glass-card tilt-card" data-aos="zoom-in" data-tilt>
+        <p class="eyebrow"><span></span> Resume</p>
+        <h2 id="resume-title">Ready for AI & Robotics Internship Roles</h2>
+        <p>Download my resume or Java Programming internship certificate.</p>
+        <div class="resume-actions">
+          <a class="btn btn--primary magnetic-link" href="assets/Satya_Sai_Vardhan_Resume.pdf" download><span class="btn__shine" aria-hidden="true"></span><i class="fa-solid fa-download" aria-hidden="true"></i>Download Resume</a>
+          <a class="btn btn--secondary magnetic-link" href="assets/java-programming-internship-certificate.pdf" download><span class="btn__shine" aria-hidden="true"></span><i class="fa-solid fa-download" aria-hidden="true"></i>Download Certificate</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section section--panel" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow"><span></span> Contact</p>
+        <h2 id="contact-title">Let's connect.</h2>
+      </div>
+
+      <div class="contact-grid" data-aos="fade-up" data-aos-delay="100">
+        <article class="contact-item glass-card tilt-card" data-tilt>
+          <div class="contact-item__icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+          <div><span>Email</span><a href="mailto:vardhan.kondepudi333@gmail.com">vardhan.kondepudi333@gmail.com</a></div>
+          <button class="copy-btn magnetic-link" type="button" data-copy="vardhan.kondepudi333@gmail.com" aria-label="Copy email address"><i class="fa-regular fa-copy" aria-hidden="true"></i></button>
+        </article>
+
+        <article class="contact-item glass-card tilt-card" data-tilt>
+          <div class="contact-item__icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+          <div><span>Phone</span><a href="tel:+919951928333">+91 99519 28333</a></div>
+          <button class="copy-btn magnetic-link" type="button" data-copy="+91 99519 28333" aria-label="Copy phone number"><i class="fa-regular fa-copy" aria-hidden="true"></i></button>
+        </article>
+
+        <article class="contact-item glass-card tilt-card" data-tilt>
+          <div class="contact-item__icon"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></div>
+          <div><span>LinkedIn</span><a href="https://www.linkedin.com/in/satya-sai-vardhan-kondepudi-31aa86366" target="_blank" rel="noopener noreferrer">Satya Sai Vardhan Kondepudi</a></div>
+          <button class="copy-btn magnetic-link" type="button" data-copy="https://www.linkedin.com/in/satya-sai-vardhan-kondepudi-31aa86366" aria-label="Copy LinkedIn profile link"><i class="fa-regular fa-copy" aria-hidden="true"></i></button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-social" aria-label="Social links">
+      <a class="magnetic-link" href="https://www.linkedin.com/in/satya-sai-vardhan-kondepudi-31aa86366" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      <a class="magnetic-link" href="mailto:vardhan.kondepudi333@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <p>&copy; <span id="currentYear"></span> Satya Sai Vardhan Kondepudi. All rights reserved.</p>
+    <button class="back-to-top magnetic-link" id="backToTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="script.js"></script>
+</body>
+</html>
